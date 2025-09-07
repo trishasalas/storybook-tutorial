@@ -1,0 +1,102 @@
+.storybook-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 300px;
+}
+
+.storybook-input__label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 4px;
+}
+
+.storybook-input {
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+/* Sizes */
+.storybook-input--small {
+  padding: 8px 12px;
+  font-size: 12px;
+}
+
+.storybook-input--medium {
+  padding: 12px 16px;
+  font-size: 14px;
+}
+
+.storybook-input--large {
+  padding: 16px 20px;
+  font-size: 16px;
+}
+
+/* Variants */
+.storybook-input--outlined {
+  border: 1px solid #d0d0d0;
+  background-color: #ffffff;
+}
+
+.storybook-input--outlined:focus {
+  border-color: #1976d2;
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.2);
+}
+
+.storybook-input--filled {
+  border: none;
+  background-color: #f5f5f5;
+  border-bottom: 2px solid #d0d0d0;
+  border-radius: 4px 4px 0 0;
+}
+
+.storybook-input--filled:focus {
+  border-bottom-color: #1976d2;
+  background-color: #f0f0f0;
+}
+
+.storybook-input--standard {
+  border: none;
+  border-bottom: 1px solid #d0d0d0;
+  border-radius: 0;
+  background-color: transparent;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.storybook-input--standard:focus {
+  border-bottom-color: #1976d2;
+  border-bottom-width: 2px;
+}
+
+/* States */
+.storybook-input--error {
+  border-color: #d32f2f !important;
+}
+
+.storybook-input--error:focus {
+  border-color: #d32f2f !important;
+  box-shadow: 0 0 0 2px rgba(211, 47, 47, 0.2) !important;
+}
+
+.storybook-input--disabled {
+  background-color: #f5f5f5;
+  color: #999999;
+  cursor: not-allowed;
+  border-color: #e0e0e0;
+}
+
+.storybook-input__helper {
+  font-size: 12px;
+  color: #666666;
+  margin-top: 4px;
+}
+
+.storybook-input__helper--error {
+  color: #d32f2f;
+}
+

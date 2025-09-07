@@ -1,0 +1,42 @@
+# build output
+dist/
+
+# generated types
+.astro/
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# environment variables
+.env
+.env.production
+
+# macOS-specific files
+.DS_Store
+
+# Local Settins Directories
+.idea
+.netlify
+.claude
+.vscode
+.windsurf
+
+# Test outputs and reports
+coverage/
+.tmp/
+playwright-report/
+test-results/
+test-results.json
+test-data/
+*.log
+*storybook.log
+
+# Storybook build outputs
+storybook-static/
+build-storybook/
